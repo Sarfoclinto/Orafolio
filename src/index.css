@@ -1,38 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.debug{
-    border: 1px solid red;
+.debug {
+  border: 1px solid red;
 }
-.object{
-    object-fit: cover;
-    object-position: center;
+.object {
+  object-fit: cover;
+  object-position: center;
 }
-.bg-navy-blue{
-    background-color: #011222;
+.bg-navy-blue {
+  background-color: #011222;
 }
-.color-navy-blue{
-    color: #011222;
+.color-navy-blue {
+  color: #011222;
 }
-#rot img{
-    transition: all 0.3s ease;
+#rot img {
+  transition: all 0.3s ease;
 }
-#rot:hover img{
-    transform: rotate(-50deg);
+#rot:hover img {
+  transform: rotate(-50deg);
 }
-.quite-dark{
-    background-color: rgb(17, 16, 19);
+.quite-dark {
+  background-color: rgb(17, 16, 19);
 }
-#hidden-img{
-    display: none;
-    transition: all 1s ease;
+#hidden-img {
+  display: none;
+  transition: all 1s ease;
 }
-#mini-client{
-    cursor: pointer;
-    transition: all 1s ease;
+#mini-client {
+  cursor: pointer;
+  transition: all 1s ease;
 }
 
-#mini-client:hover #hidden-img{
-    display: block;
-    transition: all 1s ease;
+#mini-client:hover #hidden-img {
+  display: block;
+  transition: all 1s ease;
+}
+.fade-in {
+  scale: 0;
+  animation: fade-in linear;
+  animation-timeline: view(50px);
+  animation-range: center;
+}
+@keyframes fade-in {
+  25% {
+    opacity: 0.75;
+    scale: 0.25;
+  }
+  55% {
+    opacity: 0.95;
+    scale: 0.95;
+  }
+  100% {
+    opacity: 0;
+    scale: 1;
+  }
 }

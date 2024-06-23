@@ -102,7 +102,7 @@ function Home() {
 
       <div
         id="bio"
-        className="my-20 w-full min-h-fit flex items-center gap-20 px-20"
+        className="fade-in my-20 w-full min-h-fit flex items-center gap-20 px-20"
       >
         <div className="w-1/3 ">
           <img
@@ -312,7 +312,7 @@ function Home() {
                 <p>Degital Marketing</p>
               </Link>
             </div>
-            
+
             <div className="flex flex-col gap-3 ">
               <h1 className="font-semibold text-xl">Socail Media</h1>
               <Link
@@ -340,7 +340,6 @@ function Home() {
                 <p>LinkedIn</p>
               </Link>
             </div>
-            
           </div>
         </div>
       </main>
