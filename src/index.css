@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.debug{
+    border: 1px solid red;
+}
+.object{
+    object-fit: cover;
+    object-position: center;
+}
+.bg-navy-blue{
+    background-color: #011222;
+}
+.color-navy-blue{
+    color: #011222;
+}
+#rot img{
+    transition: all 0.3s ease;
+}
+#rot:hover img{
+    transform: rotate(-50deg);
+}
+.quite-dark{
+    background-color: rgb(17, 16, 19);
+}
+#hidden-img{
+    display: none;
+    transition: all 1s ease;
+}
+#mini-client{
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+#mini-client:hover #hidden-img{
+    display: block;
+    transition: all 1s ease;
+}
